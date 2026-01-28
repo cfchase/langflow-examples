@@ -1,13 +1,12 @@
 # LangFlow Examples
 
-Example flows and custom components for use with [Multi-Agent Platform](https://github.com/cfchase/multi-agent-platform).
+Example flows for use with [Multi-Agent Platform](https://github.com/cfchase/multi-agent-platform).
 
 ## Structure
 
 ```
-├── flows/           # LangFlow flow definitions (.json)
-│   └── hello-gemini.json
-├── components/      # Custom LangFlow components (Python)
+├── simple-ollama/       # Simple Ollama agent example
+│   └── simple-ollama.json
 └── README.md
 ```
 
@@ -22,7 +21,6 @@ sources:
   - name: examples
     type: git
     url: https://github.com/cfchase/langflow-examples
-    path: flows
 ```
 
 Then run:
@@ -41,17 +39,13 @@ make langflow-import
 
 | Flow | Description |
 |------|-------------|
-| `hello-gemini` | Simple greeting flow using Google Gemini |
-
-## Custom Components
-
-Custom components can be added to the `components/` directory. See [LangFlow Custom Components](https://docs.langflow.org/components-custom-components) for documentation.
+| `simple-ollama` | Simple agent with calculator and URL tools using local Ollama |
 
 ## Contributing
 
 1. Create/edit flows in LangFlow UI
-2. Export as JSON to `flows/`
-3. Add metadata file (optional): `flows/<name>.metadata.yaml`
+2. Export as JSON to `<flow-name>/<flow-name>.json`
+3. Add metadata file (optional): `<flow-name>/<flow-name>.metadata.yaml`
 4. Submit PR
 
 ## License
