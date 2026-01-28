@@ -4,7 +4,7 @@ This file provides guidance to Claude Code when working in this repository.
 
 ## Repository Purpose
 
-This repository contains **LangFlow flows and custom components** for use with the [Multi-Agent Platform](https://github.com/cfchase/multi-agent-platform).
+This repository contains **LangFlow flows** for use with the [Multi-Agent Platform](https://github.com/cfchase/multi-agent-platform).
 
 Flows are imported into LangFlow via the platform's `make langflow-import` command.
 
@@ -12,10 +12,9 @@ Flows are imported into LangFlow via the platform's `make langflow-import` comma
 
 ```
 langflow-examples/
-├── flows/              # LangFlow flow definitions (.json)
-│   ├── *.json          # Flow exports from LangFlow
-│   └── *.metadata.yaml # Optional metadata for each flow
-├── components/         # Custom LangFlow components (Python)
+├── <flow-name>/            # Each flow in its own directory
+│   ├── <flow-name>.json    # Flow export from LangFlow
+│   └── <flow-name>.metadata.yaml # Optional metadata
 └── README.md
 ```
 
@@ -26,7 +25,7 @@ langflow-examples/
 Exported directly from LangFlow UI:
 1. Create flow in LangFlow
 2. Click "Export" → "Download JSON"
-3. Save to `flows/` directory
+3. Save to `<flow-name>/` directory
 
 ```json
 {
@@ -56,10 +55,6 @@ requires:
   - OPENAI_API_KEY
 ```
 
-## Custom Components
-
-Custom LangFlow components go in `components/`. See [LangFlow Custom Components](https://docs.langflow.org/components-custom-components) for documentation.
-
 ## Workflow
 
 ### Creating a New Flow
@@ -69,8 +64,8 @@ Custom LangFlow components go in `components/`. See [LangFlow Custom Components]
 3. Create your flow using the visual builder
 4. Test in the LangFlow playground
 5. Export: Click "Export" → "Download JSON"
-6. Save to `flows/<name>.json` in this repo
-7. Optionally add `flows/<name>.metadata.yaml`
+6. Save to `<name>/<name>.json` in this repo
+7. Optionally add `<name>/<name>.metadata.yaml`
 8. Commit and push
 
 ### Testing Import
@@ -86,7 +81,7 @@ make langflow-import
 
 ## Conventions
 
-- **Flow names**: Use kebab-case (e.g., `hello-gemini.json`)
+- **Flow names**: Use kebab-case (e.g., `simple-ollama/simple-ollama.json`)
 - **One flow per file**: Each `.json` is a single flow
 - **Metadata optional**: Only add if you need platform-specific info
 - **Test before committing**: Verify flows work in LangFlow playground
