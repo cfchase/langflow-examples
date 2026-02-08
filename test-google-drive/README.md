@@ -48,3 +48,33 @@ In flow_token_injection.py:
 This tells the backend to:
 1. Look up user's "google_drive" OAuth token
 2. Inject it into the "GoogleDriveSearch" component's "access_token" field
+
+## Known Issues (Phase 4.1)
+
+The test-google-drive flow is currently broken and returns errors or no results.
+
+### Debugging Approach
+
+1. **Check OAuth token injection**:
+   - Verify UserSettings component receives token via tweaks
+   - Confirm token is valid (not expired)
+   - Check backend logs for token injection errors
+
+2. **Check GoogleDriveSearchComponent configuration**:
+   - Ensure token_string field is populated from UserSettings
+   - Verify query_item, valid_operator, search_term are set correctly
+   - Test with simple query: `name contains 'test'`
+
+3. **Check Google API response**:
+   - Enable component logging to see API response
+   - Verify Google Drive API is enabled for the OAuth client
+
+4. **Test in platform chat UI**:
+   - User credentials require tweaks injection
+   - LangFlow playground won't work (no user session)
+
+### Expected Fix
+
+Debug and fix the flow to successfully return Google Drive search results when:
+- User has valid Google OAuth token
+- User has files in their Google Drive matching the search query
