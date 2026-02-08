@@ -1,0 +1,23 @@
+# Manifest for test-mcp-filesystem validation flow
+#
+# This flow validates MCP server auto-setup and MCPTools integration.
+# Uses Python-based mcp-server-fetch instead of Node.js.
+
+name: test-mcp-filesystem
+description: Validates MCP server auto-setup and MCPTools integration
+
+# Pip dependencies - mcp-server-fetch provides the Python MCP server
+pip_dependencies:
+  - mcp-server-fetch>=0.1.0
+
+# Components are not required - uses built-in MCPTools and Agent
+components: []
+
+# MCP server configuration (also declared in flow-sources.yaml for auto-setup)
+mcp_servers:
+  - name: server-fetch
+    type: stdio
+    command: python
+    args:
+      - "-m"
+      - "mcp_server_fetch"
