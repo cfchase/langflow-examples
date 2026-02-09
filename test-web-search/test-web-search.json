@@ -3,71 +3,47 @@
     "edges": [
       {
         "animated": false,
-        "data": {
-          "sourceHandle": {
-            "dataType": "UserSettings",
-            "id": "UserSettings-awRzh",
-            "name": "data",
-            "output_types": [
-              "Data"
-            ]
-          },
-          "targetHandle": {
-            "fieldName": "user_data",
-            "id": "GoogleDriveValidator-vLqej",
-            "inputTypes": [
-              "Data"
-            ],
-            "type": "other"
-          }
-        },
-        "id": "xy-edge__UserSettings-awRzh{œdataTypeœ:œUserSettingsœ,œidœ:œUserSettings-awRzhœ,œnameœ:œdataœ,œoutput_typesœ:[œDataœ]}-GoogleDriveValidator-vLqej{œfieldNameœ:œuser_dataœ,œidœ:œGoogleDriveValidator-vLqejœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}",
-        "selected": false,
-        "source": "UserSettings-awRzh",
-        "sourceHandle": "{œdataTypeœ:œUserSettingsœ,œidœ:œUserSettings-awRzhœ,œnameœ:œdataœ,œoutput_typesœ:[œDataœ]}",
-        "target": "GoogleDriveValidator-vLqej",
-        "targetHandle": "{œfieldNameœ:œuser_dataœ,œidœ:œGoogleDriveValidator-vLqejœ,œinputTypesœ:[œDataœ],œtypeœ:œotherœ}"
-      },
-      {
-        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
             "dataType": "ChatInput",
-            "id": "ChatInput-1fRVO",
+            "id": "ChatInput-S0765",
             "name": "message",
             "output_types": [
               "Message"
             ]
           },
           "targetHandle": {
-            "fieldName": "search_query",
-            "id": "GoogleDriveValidator-vLqej",
+            "fieldName": "input_value",
+            "id": "DuckDuckGoSearchComponent-4VFJ6",
             "inputTypes": [
               "Message"
             ],
             "type": "str"
           }
         },
-        "id": "xy-edge__ChatInput-1fRVO{œdataTypeœ:œChatInputœ,œidœ:œChatInput-1fRVOœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-GoogleDriveValidator-vLqej{œfieldNameœ:œsearch_queryœ,œidœ:œGoogleDriveValidator-vLqejœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "id": "xy-edge__ChatInput-S0765{œdataTypeœ:œChatInputœ,œidœ:œChatInput-S0765œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}-DuckDuckGoSearchComponent-4VFJ6{œfieldNameœ:œinput_valueœ,œidœ:œDuckDuckGoSearchComponent-4VFJ6œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "selected": false,
-        "source": "ChatInput-1fRVO",
-        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-1fRVOœ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "GoogleDriveValidator-vLqej",
-        "targetHandle": "{œfieldNameœ:œsearch_queryœ,œidœ:œGoogleDriveValidator-vLqejœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
+        "source": "ChatInput-S0765",
+        "sourceHandle": "{œdataTypeœ:œChatInputœ,œidœ:œChatInput-S0765œ,œnameœ:œmessageœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "DuckDuckGoSearchComponent-4VFJ6",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œDuckDuckGoSearchComponent-4VFJ6œ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}"
       },
       {
+        "animated": false,
+        "className": "",
         "data": {
           "sourceHandle": {
-            "dataType": "GoogleDriveValidator",
-            "id": "GoogleDriveValidator-vLqej",
-            "name": "results",
+            "dataType": "DuckDuckGoSearchComponent",
+            "id": "DuckDuckGoSearchComponent-4VFJ6",
+            "name": "dataframe",
             "output_types": [
-              "Message"
+              "DataFrame"
             ]
           },
           "targetHandle": {
             "fieldName": "input_value",
-            "id": "ChatOutput-pNfil",
+            "id": "ChatOutput-a0Qru",
             "inputTypes": [
               "Data",
               "DataFrame",
@@ -76,17 +52,18 @@
             "type": "other"
           }
         },
-        "id": "xy-edge__GoogleDriveValidator-vLqej{œdataTypeœ:œGoogleDriveValidatorœ,œidœ:œGoogleDriveValidator-vLqejœ,œnameœ:œresultsœ,œoutput_typesœ:[œMessageœ]}-ChatOutput-pNfil{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-pNfilœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
-        "source": "GoogleDriveValidator-vLqej",
-        "sourceHandle": "{œdataTypeœ:œGoogleDriveValidatorœ,œidœ:œGoogleDriveValidator-vLqejœ,œnameœ:œresultsœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "ChatOutput-pNfil",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-pNfilœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
+        "id": "xy-edge__DuckDuckGoSearchComponent-4VFJ6{œdataTypeœ:œDuckDuckGoSearchComponentœ,œidœ:œDuckDuckGoSearchComponent-4VFJ6œ,œnameœ:œdataframeœ,œoutput_typesœ:[œDataFrameœ]}-ChatOutput-a0Qru{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-a0Qruœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}",
+        "selected": false,
+        "source": "DuckDuckGoSearchComponent-4VFJ6",
+        "sourceHandle": "{œdataTypeœ:œDuckDuckGoSearchComponentœ,œidœ:œDuckDuckGoSearchComponent-4VFJ6œ,œnameœ:œdataframeœ,œoutput_typesœ:[œDataFrameœ]}",
+        "target": "ChatOutput-a0Qru",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œChatOutput-a0Qruœ,œinputTypesœ:[œDataœ,œDataFrameœ,œMessageœ],œtypeœ:œotherœ}"
       }
     ],
     "nodes": [
       {
         "data": {
-          "id": "ChatInput-1fRVO",
+          "id": "ChatInput-S0765",
           "node": {
             "base_classes": [
               "Message"
@@ -110,6 +87,7 @@
             "frozen": false,
             "icon": "MessagesSquare",
             "legacy": false,
+            "lf_version": "1.7.2",
             "metadata": {
               "code_hash": "7a26c54d89ed",
               "dependencies": {
@@ -364,21 +342,21 @@
           "type": "ChatInput"
         },
         "dragging": false,
-        "id": "ChatInput-1fRVO",
+        "id": "ChatInput-S0765",
         "measured": {
           "height": 48,
           "width": 192
         },
         "position": {
-          "x": 131.2844023044005,
-          "y": 899.3610186555171
+          "x": 173,
+          "y": 599
         },
         "selected": false,
         "type": "genericNode"
       },
       {
         "data": {
-          "id": "ChatOutput-pNfil",
+          "id": "ChatOutput-a0Qru",
           "node": {
             "base_classes": [
               "Message"
@@ -403,6 +381,7 @@
             "frozen": false,
             "icon": "MessagesSquare",
             "legacy": false,
+            "lf_version": "1.7.2",
             "metadata": {
               "code_hash": "8c87e536cca4",
               "dependencies": {
@@ -661,55 +640,57 @@
           "type": "ChatOutput"
         },
         "dragging": false,
-        "id": "ChatOutput-pNfil",
+        "id": "ChatOutput-a0Qru",
         "measured": {
           "height": 48,
           "width": 192
         },
         "position": {
-          "x": 987.8107762086697,
-          "y": 869.93716047407
+          "x": 946,
+          "y": 744
         },
         "selected": false,
         "type": "genericNode"
       },
       {
         "data": {
-          "id": "GoogleDriveValidator-vLqej",
+          "id": "DuckDuckGoSearchComponent-4VFJ6",
           "node": {
             "base_classes": [
-              "Message"
+              "DataFrame"
             ],
             "beta": false,
             "conditional_paths": [],
             "custom_fields": {},
-            "description": "Search Google Drive with an OAuth access token",
-            "display_name": "Google Drive Validator",
-            "documentation": "",
+            "description": "Search the web using DuckDuckGo with customizable result limits",
+            "display_name": "DuckDuckGo Search",
+            "documentation": "https://python.langchain.com/docs/integrations/tools/ddg",
             "edited": false,
             "field_order": [
-              "user_data",
-              "search_query"
+              "input_value",
+              "max_results",
+              "max_snippet_length"
             ],
             "frozen": false,
-            "icon": "GoogleDrive",
+            "icon": "DuckDuckGo",
             "legacy": false,
+            "lf_version": "1.7.2",
             "metadata": {
-              "code_hash": "2e5c276a25a4",
+              "code_hash": "2e522a5a4389",
               "dependencies": {
                 "dependencies": [
                   {
-                    "name": "httpx",
-                    "version": "0.28.1"
+                    "name": "langchain_community",
+                    "version": "0.3.21"
                   },
                   {
-                    "name": "langflow",
-                    "version": "1.7.2"
+                    "name": "lfx",
+                    "version": "0.2.1"
                   }
                 ],
                 "total_dependencies": 2
               },
-              "module": "custom_components.google_drive_validator"
+              "module": "lfx.components.duckduckgo.duck_duck_go_search_run.DuckDuckGoSearchComponent"
             },
             "minimized": false,
             "output_types": [],
@@ -717,14 +698,14 @@
               {
                 "allows_loop": false,
                 "cache": true,
-                "display_name": "Results",
+                "display_name": "DataFrame",
                 "group_outputs": false,
-                "method": "search_drive",
-                "name": "results",
-                "selected": "Message",
+                "method": "fetch_content_dataframe",
+                "name": "dataframe",
+                "selected": "DataFrame",
                 "tool_mode": true,
                 "types": [
-                  "Message"
+                  "DataFrame"
                 ],
                 "value": "__UNDEFINED__"
               }
@@ -748,200 +729,104 @@
                 "show": true,
                 "title_case": false,
                 "type": "code",
-                "value": "\"\"\"\nGoogle Drive validation component using just an access token.\n\nValidates OAuth token injection by calling the Google Drive API\nwith a Bearer token. Unlike LangFlow's built-in GoogleDriveSearchComponent\n(which requires full OAuth credentials JSON), this component works with\njust the access_token string that the platform injects.\n\nFlow wiring:\n    UserSettings → [user_data] → GoogleDriveValidator\n    ChatInput → [search_query] → GoogleDriveValidator\n    GoogleDriveValidator → ChatOutput\n\"\"\"\nimport httpx\nfrom langflow.custom import Component\nfrom langflow.io import DataInput, MessageTextInput, Output\nfrom langflow.schema.data import Data\nfrom langflow.schema.message import Message\n\n\nclass GoogleDriveValidatorComponent(Component):\n    \"\"\"Searches Google Drive using a Bearer access token.\n\n    Accepts user_data from UserSettings (which contains google_drive_token)\n    and a search query. Calls the Google Drive REST API directly.\n    \"\"\"\n\n    display_name = \"Google Drive Validator\"\n    description = \"Search Google Drive with an OAuth access token\"\n    icon = \"GoogleDrive\"\n    name = \"GoogleDriveValidator\"\n\n    inputs = [\n        DataInput(\n            name=\"user_data\",\n            display_name=\"User Data\",\n            info=\"Data from UserSettings containing google_drive_token\",\n        ),\n        MessageTextInput(\n            name=\"search_query\",\n            display_name=\"Search Query\",\n            info=\"Search term for Google Drive files\",\n            value=\"test\",\n        ),\n    ]\n\n    outputs = [\n        Output(\n            name=\"results\",\n            display_name=\"Results\",\n            method=\"search_drive\",\n        ),\n    ]\n\n    def search_drive(self) -> Message:\n        # Extract token from UserSettings data\n        token = None\n        if self.user_data:\n            if isinstance(self.user_data, Data):\n                token = self.user_data.data.get(\"google_drive_token\")\n            elif isinstance(self.user_data, dict):\n                token = self.user_data.get(\"google_drive_token\")\n\n        if not token:\n            return Message(\n                text=\"No google_drive_token found in User Data. \"\n                \"Ensure UserSettings is connected and the platform \"\n                \"is injecting the token via tweaks.\"\n            )\n\n        query = self.search_query or \"test\"\n\n        response = httpx.get(\n            \"https://www.googleapis.com/drive/v3/files\",\n            params={\n                \"q\": f\"name contains '{query}'\",\n                \"fields\": \"files(id,name,mimeType,modifiedTime)\",\n                \"pageSize\": 10,\n            },\n            headers={\"Authorization\": f\"Bearer {token}\"},\n            timeout=30,\n        )\n        response.raise_for_status()\n        files = response.json().get(\"files\", [])\n\n        if not files:\n            return Message(text=f\"No files found matching '{query}'\")\n\n        lines = [f\"Found {len(files)} file(s) matching '{query}':\\n\"]\n        for f in files:\n            lines.append(\n                f\"- {f['name']} ({f.get('mimeType', 'unknown')})\"\n            )\n        return Message(text=\"\\n\".join(lines))\n"
+                "value": "from langchain_community.tools import DuckDuckGoSearchRun\n\nfrom lfx.custom.custom_component.component import Component\nfrom lfx.inputs.inputs import IntInput, MessageTextInput\nfrom lfx.schema.data import Data\nfrom lfx.schema.dataframe import DataFrame\nfrom lfx.template.field.base import Output\n\n\nclass DuckDuckGoSearchComponent(Component):\n    \"\"\"Component for performing web searches using DuckDuckGo.\"\"\"\n\n    display_name = \"DuckDuckGo Search\"\n    description = \"Search the web using DuckDuckGo with customizable result limits\"\n    documentation = \"https://python.langchain.com/docs/integrations/tools/ddg\"\n    icon = \"DuckDuckGo\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"input_value\",\n            display_name=\"Search Query\",\n            required=True,\n            info=\"The search query to execute with DuckDuckGo\",\n            tool_mode=True,\n        ),\n        IntInput(\n            name=\"max_results\",\n            display_name=\"Max Results\",\n            value=5,\n            required=False,\n            advanced=True,\n            info=\"Maximum number of search results to return\",\n        ),\n        IntInput(\n            name=\"max_snippet_length\",\n            display_name=\"Max Snippet Length\",\n            value=100,\n            required=False,\n            advanced=True,\n            info=\"Maximum length of each result snippet\",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"DataFrame\", name=\"dataframe\", method=\"fetch_content_dataframe\"),\n    ]\n\n    def _build_wrapper(self) -> DuckDuckGoSearchRun:\n        \"\"\"Build the DuckDuckGo search wrapper.\"\"\"\n        return DuckDuckGoSearchRun()\n\n    def run_model(self) -> DataFrame:\n        return self.fetch_content_dataframe()\n\n    def fetch_content(self) -> list[Data]:\n        \"\"\"Execute the search and return results as Data objects.\"\"\"\n        try:\n            wrapper = self._build_wrapper()\n\n            full_results = wrapper.run(f\"{self.input_value} (site:*)\")\n\n            result_list = full_results.split(\"\\n\")[: self.max_results]\n\n            data_results = []\n            for result in result_list:\n                if result.strip():\n                    snippet = result[: self.max_snippet_length]\n                    data_results.append(\n                        Data(\n                            text=snippet,\n                            data={\n                                \"content\": result,\n                                \"snippet\": snippet,\n                            },\n                        )\n                    )\n        except (ValueError, AttributeError) as e:\n            error_data = [Data(text=str(e), data={\"error\": str(e)})]\n            self.status = error_data\n            return error_data\n        else:\n            self.status = data_results\n            return data_results\n\n    def fetch_content_dataframe(self) -> DataFrame:\n        \"\"\"Convert the search results to a DataFrame.\n\n        Returns:\n            DataFrame: A DataFrame containing the search results.\n        \"\"\"\n        data = self.fetch_content()\n        return DataFrame(data)\n"
               },
-              "search_query": {
+              "input_value": {
                 "_input_type": "MessageTextInput",
                 "advanced": false,
                 "display_name": "Search Query",
                 "dynamic": false,
-                "info": "Search term for Google Drive files",
+                "info": "The search query to execute with DuckDuckGo",
                 "input_types": [
                   "Message"
                 ],
                 "list": false,
                 "list_add_label": "Add More",
                 "load_from_db": false,
-                "name": "search_query",
+                "name": "input_value",
                 "override_skip": false,
                 "placeholder": "",
-                "required": false,
+                "required": true,
                 "show": true,
                 "title_case": false,
-                "tool_mode": false,
+                "tool_mode": true,
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "track_in_telemetry": false,
                 "type": "str",
                 "value": ""
               },
-              "user_data": {
-                "_input_type": "DataInput",
+              "max_results": {
+                "_input_type": "IntInput",
                 "advanced": false,
-                "display_name": "User Data",
+                "display_name": "Max Results",
                 "dynamic": false,
-                "info": "Data from UserSettings containing google_drive_token",
-                "input_types": [
-                  "Data"
-                ],
+                "info": "Maximum number of search results to return",
                 "list": false,
                 "list_add_label": "Add More",
-                "name": "user_data",
+                "name": "max_results",
                 "override_skip": false,
                 "placeholder": "",
                 "required": false,
                 "show": true,
                 "title_case": false,
                 "tool_mode": false,
-                "trace_as_input": true,
                 "trace_as_metadata": true,
-                "track_in_telemetry": false,
-                "type": "other",
-                "value": ""
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 5
+              },
+              "max_snippet_length": {
+                "_input_type": "IntInput",
+                "advanced": true,
+                "display_name": "Max Snippet Length",
+                "dynamic": false,
+                "info": "Maximum length of each result snippet",
+                "list": false,
+                "list_add_label": "Add More",
+                "name": "max_snippet_length",
+                "override_skip": false,
+                "placeholder": "",
+                "required": false,
+                "show": true,
+                "title_case": false,
+                "tool_mode": false,
+                "trace_as_metadata": true,
+                "track_in_telemetry": true,
+                "type": "int",
+                "value": 100
               }
             },
             "tool_mode": false
           },
           "showNode": true,
-          "type": "GoogleDriveValidator"
+          "type": "DuckDuckGoSearchComponent"
         },
         "dragging": false,
-        "id": "GoogleDriveValidator-vLqej",
+        "id": "DuckDuckGoSearchComponent-4VFJ6",
         "measured": {
-          "height": 247,
+          "height": 301,
           "width": 320
         },
         "position": {
-          "x": 490.23445775123525,
-          "y": 707.9458757110601
+          "x": 479,
+          "y": 489.5
         },
         "selected": false,
-        "type": "genericNode"
-      },
-      {
-        "data": {
-          "id": "UserSettings-awRzh",
-          "node": {
-            "base_classes": [
-              "Data"
-            ],
-            "beta": false,
-            "conditional_paths": [],
-            "custom_fields": {},
-            "description": "User context from platform (OAuth tokens, preferences)",
-            "display_name": "User Settings",
-            "documentation": "",
-            "edited": false,
-            "field_order": [
-              "settings_data"
-            ],
-            "frozen": false,
-            "icon": "User",
-            "legacy": false,
-            "metadata": {
-              "code_hash": "9abe69765e5a",
-              "dependencies": {
-                "dependencies": [
-                  {
-                    "name": "langflow",
-                    "version": "1.7.2"
-                  }
-                ],
-                "total_dependencies": 1
-              },
-              "module": "custom_components.user_settings"
-            },
-            "minimized": false,
-            "output_types": [],
-            "outputs": [
-              {
-                "allows_loop": false,
-                "cache": true,
-                "display_name": "User Data",
-                "group_outputs": false,
-                "method": "get_data",
-                "name": "data",
-                "selected": "Data",
-                "tool_mode": true,
-                "types": [
-                  "Data"
-                ],
-                "value": "__UNDEFINED__"
-              }
-            ],
-            "pinned": false,
-            "template": {
-              "_type": "Component",
-              "code": {
-                "advanced": true,
-                "dynamic": true,
-                "fileTypes": [],
-                "file_path": "",
-                "info": "",
-                "list": false,
-                "load_from_db": false,
-                "multiline": true,
-                "name": "code",
-                "password": false,
-                "placeholder": "",
-                "required": true,
-                "show": true,
-                "title_case": false,
-                "type": "code",
-                "value": "\"\"\"\nUserSettings component for generic settings injection.\n\nThis component receives user context JSON from the platform via tweaks\nand outputs it as a Data object for flows to consume.\n\nThe platform injects via tweaks: {\"UserSettings\": {\"data\": {...}}}\nFlows can then wire the data output to components that need user context.\n\"\"\"\nfrom langflow.custom import Component\nfrom langflow.io import NestedDictInput, Output\nfrom langflow.schema.data import Data\n\n\nclass UserSettingsComponent(Component):\n    \"\"\"Receives user context JSON from platform tweaks.\n\n    This replaces per-flow tweak mappings with a generic pattern.\n    The backend sends: {\"UserSettings\": {\"settings_data\": {...}}}\n\n    Flows can then wire the data output to components that need user context.\n\n    Example data:\n        {\n            \"google_drive_token\": \"oauth-token\",\n            \"email\": \"user@example.com\",\n            \"preferences\": {...}\n        }\n    \"\"\"\n\n    display_name = \"User Settings\"\n    description = \"User context from platform (OAuth tokens, preferences)\"\n    icon = \"User\"\n    name = \"UserSettings\"\n\n    inputs = [\n        NestedDictInput(\n            name=\"settings_data\",\n            display_name=\"Settings Data\",\n            info=\"User settings injected by the platform via tweaks\",\n            value={},\n            advanced=True,\n        ),\n    ]\n\n    outputs = [\n        Output(\n            name=\"data\",\n            display_name=\"User Data\",\n            method=\"get_data\",\n            types=[\"Data\"],\n        ),\n    ]\n\n    def get_data(self) -> Data:\n        \"\"\"Return the injected user settings as Data.\n\n        The platform injects via tweaks:\n            {\"UserSettings\": {\"settings_data\": {...}}}\n\n        Returns:\n            Data: User settings as a Data object\n        \"\"\"\n        raw = getattr(self, \"settings_data\", {})\n        settings_dict = raw if isinstance(raw, dict) else {}\n        return Data(data=settings_dict)\n"
-              },
-              "settings_data": {
-                "_input_type": "NestedDictInput",
-                "advanced": true,
-                "display_name": "Settings Data",
-                "dynamic": false,
-                "info": "User settings injected by the platform via tweaks",
-                "list": false,
-                "list_add_label": "Add More",
-                "name": "settings_data",
-                "override_skip": false,
-                "placeholder": "",
-                "required": false,
-                "show": true,
-                "title_case": false,
-                "tool_mode": false,
-                "trace_as_input": true,
-                "trace_as_metadata": true,
-                "track_in_telemetry": false,
-                "type": "NestedDict",
-                "value": {}
-              }
-            },
-            "tool_mode": false
-          },
-          "showNode": true,
-          "type": "UserSettings"
-        },
-        "dragging": false,
-        "id": "UserSettings-awRzh",
-        "measured": {
-          "height": 137,
-          "width": 320
-        },
-        "position": {
-          "x": 61.659240763036564,
-          "y": 637.4640097872714
-        },
-        "selected": true,
         "type": "genericNode"
       }
     ],
     "viewport": {
-      "x": 237.760900662847,
-      "y": 224.249116225918,
-      "zoom": 0.8796588907995144
+      "x": -9.40849625760984,
+      "y": -54.041702702361704,
+      "zoom": 1
     }
   },
-  "description": "Unfolding Linguistic Possibilities.",
+  "description": "Language Architect at Work!",
   "endpoint_name": null,
-  "id": "8b2a03ab-9258-4165-84e9-299895ad5582",
+  "id": "0e7c0127-08d2-4683-a175-5019c0bcad08",
   "is_component": false,
   "last_tested_version": "1.7.2",
-  "name": "test-google-drive",
+  "name": "test-web-search",
   "tags": []
 }
