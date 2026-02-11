@@ -1,7 +1,7 @@
 # Claude Code
 .claude/
 .tmp/
-.planming/
+.planning/
 
 # Python
 __pycache__/
